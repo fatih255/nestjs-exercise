@@ -1,0 +1,29 @@
+POST http://localhost:4000/auth/signin
+
+###
+POST http://localhost:4000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "test@example.com",
+    "password": "test"
+}
+
+
+### property types
+
+POST http://localhost:4000/property/type/create
+Content-Type: application/json
+
+{
+    "name": "Kiralık",
+    "purpose_ids":[1,2,3,4]
+}
+###
+
+POST http://localhost:4000/property/purpose-category/create
+Content-Type: application/json
+
+{
+    "name": "Satılık"
+}
